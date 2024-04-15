@@ -26,8 +26,8 @@ function App() {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-yellow-100">
-      <h1 className="text-4xl font-bold mb-4 font-cursive">Note Taking App</h1>
+    <div className="container mx-auto p-4 bg-gradient-to-br from-pink-400 to-yellow-200">
+      <h1 className="text-5xl font-bold mb-6 font-cursive text-indigo-900">📝 Colorful Notes 🎨</h1>
       <div className="flex mb-4">
         <input type="text" placeholder="Enter a new note" value={inputText} onChange={handleInputChange} className="input input-bordered flex-grow mr-2" />
         <button onClick={handleAddNote} className="btn btn-primary rounded-full">
@@ -37,7 +37,7 @@ function App() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {notes.map((note) => (
-          <div key={note.id} className="card bg-blue-100 shadow-xl rounded-xl">
+          <div key={note.id} className="card bg-white shadow-xl rounded-xl bg-gradient-to-br from-blue-200 to-green-200 bg-opacity-50 backdrop-filter backdrop-blur-sm">
             <div className="card-body">
               <p>{note.text}</p>
               <div className="card-actions justify-end">
